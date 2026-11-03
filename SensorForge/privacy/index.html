@@ -5,81 +5,98 @@
 <meta name="viewport" content="width=device-width,initial-scale=1">
 <title>Politique de confidentialité · SensorForge</title>
 <style>
-:root{--bg:#07111f;--card:#0d1c2b;--ink:#eef5fb;--muted:#9fb0bf;--accent:#80b3ff;--line:#1d3347}
-*{box-sizing:border-box}body{font-family:system-ui,-apple-system,sans-serif;max-width:860px;margin:0 auto;padding:44px 20px;color:var(--ink);background:var(--bg);line-height:1.62}
-h1,h2{line-height:1.2}h2{margin-top:30px}a{color:var(--accent)}.box{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:20px;margin:20px 0}.muted{color:var(--muted)}hr{border:0;border-top:1px solid var(--line);margin:44px 0}
+body{font-family:system-ui,-apple-system,sans-serif;max-width:840px;margin:0 auto;padding:44px 20px;color:#25323c;background:#f7f8fa;line-height:1.6}
+h1,h2{line-height:1.2}h2{margin-top:32px}a{color:#0d6f7c}.box{background:#fff;border-radius:18px;padding:20px;margin:20px 0}.muted{color:#66737d}hr{border:0;border-top:1px solid #dde3e7;margin:42px 0}
 </style>
 </head>
 <body>
 <h1>Politique de confidentialité de SensorForge</h1>
 <p class="muted">Dernière mise à jour : 3 novembre 2026 · Éditeur : Orbivia</p>
 
-<div class="box"><strong>Résumé.</strong> Les données de mesure SensorForge restent localement sur le téléphone sauf partage volontaire. L’application n’utilise pas de compte ou de cloud Orbivia. Elle peut afficher des bannières Google AdMob limitées aux écrans racine Sensors et Tools, avec gestion du consentement via Google UMP.</div>
+<div class="box"><strong>Résumé.</strong> SensorForge traite les mesures localement et ne nécessite aucun compte ni serveur Orbivia. L'application intègre Google AdMob pour une bannière publicitaire limitée et Google UMP pour le consentement lorsque nécessaire.</div>
 
-<h2>Données de mesure</h2>
-<p>SensorForge peut accéder aux capteurs de l’appareil, à la batterie, au microphone, à la caméra, à la localisation, aux résultats de scan Wi‑Fi et Bluetooth et à certaines données d’activité physique lorsque l’utilisateur ouvre une fonction correspondante ou sélectionne une source dans Record.</p>
-<p>Ces données sont traitées localement. SensorForge ne transmet pas à Orbivia ni au SDK publicitaire les valeurs de capteur, coordonnées GPS précises, contenus de scans Wi‑Fi/Bluetooth, trames caméra, audio microphone ou fichiers d’enregistrement.</p>
+<h2>Données auxquelles l'application peut accéder</h2>
+<p>Selon les fonctions utilisées, SensorForge peut accéder aux capteurs Android, à la batterie, au microphone, à la caméra, à la position, aux résultats de scans Wi-Fi et Bluetooth et aux informations d'activité physique requises par certains capteurs Android.</p>
+
+<h2>Mesures et enregistrements</h2>
+<p>Les mesures sont traitées localement sur l'appareil. SensorForge n'envoie pas à Orbivia les valeurs de capteurs, coordonnées GPS, contenus de scans Wi-Fi/Bluetooth, trames caméra, audio microphone ou fichiers de session.</p>
+<p>Une session Record peut contenir notamment un fichier CSV synchronisé, des événements Wi-Fi/Bluetooth, des marqueurs, un fichier de métadonnées et, si l'utilisateur l'active explicitement, un fichier audio WAV.</p>
 
 <h2>Publicité et consentement</h2>
-<p>SensorForge utilise <strong>Google AdMob</strong> pour afficher une bannière adaptative uniquement sur les écrans racine <strong>Sensors</strong> et <strong>Tools</strong>. Aucune publicité n’est affichée dans Record, pendant un enregistrement, dans un détail de capteur, dans un outil ouvert ou dans Info.</p>
-<p>SensorForge utilise <strong>Google User Messaging Platform (UMP)</strong> pour gérer les choix de confidentialité lorsque cela est requis. Aucune demande publicitaire n’est envoyée tant que UMP n’indique pas que les annonces peuvent être demandées. Lorsque Google l’exige, une entrée « Privacy options » est disponible dans Info afin de revoir ou modifier les choix publicitaires.</p>
-<p>Selon la documentation de Google Mobile Ads, le SDK publicitaire peut collecter et partager automatiquement des informations telles que l’adresse IP, les interactions avec l’application ou les annonces, des informations de diagnostic et des identifiants d’appareil ou de compte, notamment l’identifiant publicitaire Android lorsqu’il est disponible. Ces données peuvent être utilisées par Google pour la publicité, l’analyse et la prévention de la fraude selon le consentement, les réglages de l’appareil et la configuration Google. Les données transmises par le SDK sont chiffrées en transit.</p>
-<p>Politique Google : <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+<p>SensorForge utilise Google AdMob pour afficher une bannière adaptative sur les écrans racine Sensors et Tools. Aucune bannière n'est affichée dans Record, pendant un enregistrement, dans les écrans de détail ou dans Info.</p>
+<p>Google User Messaging Platform (UMP) est utilisé pour recueillir ou gérer les choix publicitaires lorsque cela est requis. SensorForge ne demande pas d'annonce avant que UMP indique qu'une demande publicitaire est autorisée.</p>
+<p>Selon Google, le SDK Mobile Ads peut traiter notamment l'adresse IP et une localisation approximative dérivée, les interactions avec l'application ou les annonces, des informations de diagnostic et de performance ainsi que des identifiants de l'appareil ou publicitaires lorsqu'ils sont disponibles. Ces données sont traitées par Google selon la configuration, les choix de consentement et les paramètres de l'appareil.</p>
+<p>Politique Google : <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
 
 <h2>Permissions</h2>
-<p><strong>Internet / état réseau :</strong> utilisés par Google AdMob et UMP pour le consentement et la publicité.</p>
-<p><strong>Identifiant publicitaire :</strong> peut être utilisé par Google Mobile Ads selon les choix de consentement et les réglages Android.</p>
-<p><strong>Microphone :</strong> Audio Analyzer et source Microphone de Record ; un WAV local n’est créé que si l’utilisateur active explicitement Raw audio WAV.</p>
-<p><strong>Caméra :</strong> analyse locale de luminance ; SensorForge n’enregistre pas d’image ou vidéo.</p>
-<p><strong>Localisation :</strong> GPS, Record GPS et compatibilité des scans Wi‑Fi/Bluetooth. SensorForge ne transmet pas la localisation GPS précise au SDK publicitaire.</p>
-<p><strong>Bluetooth / activité / capteurs haute fréquence :</strong> utilisés uniquement pour les fonctions techniques correspondantes.</p>
+<ul>
+<li><strong>Microphone :</strong> Audio Analyzer et source Microphone de Record. Le WAV brut n'est créé que sur activation explicite.</li>
+<li><strong>Caméra :</strong> calcul local de luminance relative, variation et FPS ; aucune image ou vidéo n'est enregistrée.</li>
+<li><strong>Localisation :</strong> GPS et compatibilité des scans à proximité sur les appareils Android qui l'exigent.</li>
+<li><strong>Bluetooth :</strong> découverte de périphériques et exploration GATT déclenchée par l'utilisateur.</li>
+<li><strong>Activité physique :</strong> uniquement pour les capteurs Android qui nécessitent cette permission.</li>
+<li><strong>Internet / réseau :</strong> AdMob et UMP.</li>
+<li><strong>Advertising ID :</strong> peut être utilisé par Google Mobile Ads selon le consentement et les paramètres Android.</li>
+</ul>
 
-<h2>Fichiers et partage</h2>
-<p>Record crée des dossiers de session dans l’espace propre à l’application. Selon les sources choisies, ils peuvent contenir des CSV, un WAV optionnel et des métadonnées de session. Aucun fichier n’est envoyé automatiquement. Le partage n’a lieu qu’à la demande de l’utilisateur via la feuille de partage Android.</p>
+<h2>Stockage local et conservation</h2>
+<p>Les sessions sont stockées dans l'espace spécifique à l'application et restent sur l'appareil jusqu'à leur suppression par l'utilisateur ou la désinstallation. Les sauvegardes automatiques Android de ces données sont désactivées.</p>
 
-<h2>Sauvegarde, conservation et suppression</h2>
-<p>La sauvegarde Android automatique des données SensorForge est désactivée. Les sessions locales restent sur l’appareil jusqu’à leur suppression dans l’application ou sa désinstallation. Les copies déjà partagées doivent être supprimées séparément dans leur destination.</p>
-<p>Les données publicitaires traitées par Google relèvent des politiques Google et des contrôles publicitaires Android/Google. L’identifiant publicitaire Android peut être réinitialisé ou supprimé depuis les réglages système lorsque cette option est disponible.</p>
+<h2>Partage volontaire</h2>
+<p>L'utilisateur peut partager explicitement des sessions par le mécanisme de partage Android. Si une application ou un service tiers est choisi, la copie est ensuite soumise à la politique de cette destination. Orbivia ne reçoit pas automatiquement ces exports.</p>
+
+<h2>Suppression</h2>
+<p>Les sessions peuvent être supprimées depuis SensorForge. La désinstallation supprime les données privées de l'application. Les copies précédemment exportées doivent être supprimées séparément de leur destination. SensorForge ne possède aucun compte distant à supprimer.</p>
+
+<h2>Sécurité</h2>
+<p>SensorForge utilise le stockage applicatif Android, désactive la sauvegarde automatique de ses sessions et impose les communications réseau chiffrées pour les composants qui accèdent à Internet. Les fichiers volontairement exportés ne sont pas chiffrés par SensorForge.</p>
 
 <h2>Enfants</h2>
-<p>SensorForge est un utilitaire technique généraliste et ne cible pas spécifiquement les enfants.</p>
+<p>SensorForge est un utilitaire technique destiné à un usage général et n'est pas spécifiquement destiné aux enfants.</p>
+
+<h2>Site de support</h2>
+<p>Cette page est hébergée par GitHub Pages. GitHub peut traiter les données techniques nécessaires à la fourniture et à la sécurité du service web, telles que l'adresse IP et les informations de requête. Le site SensorForge n'intègre pas d'outil d'analytics ou de publicité propre.</p>
 
 <h2>Contact</h2>
-<p>Orbivia — <a href="mailto:pierre.charlier@orbivia.fr">pierre.charlier@orbivia.fr</a></p>
+<p>Questions de confidentialité : Orbivia — <a href="mailto:pierre.charlier@orbivia.fr">pierre.charlier@orbivia.fr</a>.</p>
 
 <h2>Modifications</h2>
-<p>Cette politique peut être mise à jour si les fonctions de l’application, les SDK utilisés ou leurs traitements de données changent.</p>
+<p>Cette politique peut être mise à jour si les fonctions de SensorForge, ses SDK ou ses traitements de données évoluent. La date affichée en haut indique la version en vigueur.</p>
 
 <hr>
 
-<h1 lang="en">SensorForge Privacy Policy</h1>
-<p class="muted" lang="en">Last updated: November 3, 2026 · Publisher: Orbivia</p>
-
-<div class="box" lang="en"><strong>Summary.</strong> SensorForge measurement data stays locally on the phone unless the user explicitly shares it. The app has no SensorForge account or Orbivia cloud backend. It may display Google AdMob banners only on the root Sensors and Tools screens, with consent managed through Google UMP.</div>
-
 <div lang="en">
-<h2>Measurement data</h2>
-<p>SensorForge may access device sensors, battery information, microphone, camera, location, Wi‑Fi scan results, Bluetooth nearby-device results and physical-activity information when the user opens a related function or selects a source for recording.</p>
-<p>This measurement data is processed locally. SensorForge does not provide sensor values, precise GPS coordinates, Wi‑Fi/Bluetooth scan contents, camera frames, microphone audio or recording files to Orbivia or to the advertising SDK.</p>
+<h1>SensorForge Privacy Policy</h1>
+<p class="muted">Last updated: November 3, 2026 · Publisher: Orbivia</p>
+
+<div class="box"><strong>Summary.</strong> SensorForge processes measurements locally and requires no SensorForge account or Orbivia backend. The app uses Google AdMob for limited banner advertising and Google UMP for consent where required.</div>
+
+<h2>Data accessed by the app</h2>
+<p>Depending on the features used, SensorForge may access Android sensors, battery information, microphone, camera, location, Wi-Fi scan results, Bluetooth nearby-device results and physical-activity information required by some Android sensors.</p>
+
+<h2>Measurements and recordings</h2>
+<p>Measurement processing is local. SensorForge does not send sensor values, precise GPS coordinates, Wi-Fi/Bluetooth scan contents, camera frames, microphone audio or session files to Orbivia.</p>
 
 <h2>Advertising and consent</h2>
-<p>SensorForge uses <strong>Google AdMob</strong> to display an adaptive banner only on the root <strong>Sensors</strong> and <strong>Tools</strong> screens. No ads are shown in Record, while recording, inside sensor details, inside an opened Tool or in Info.</p>
-<p>SensorForge uses <strong>Google User Messaging Platform (UMP)</strong> to manage privacy choices when required. No ad request is sent until UMP reports that ads can be requested. When required by Google, a Privacy options entry is available in Info.</p>
-<p>According to Google Mobile Ads documentation, the advertising SDK may automatically collect and share information such as IP address, app/ad interactions, diagnostic information and device/account identifiers, including the Android advertising ID when available. Google may use this information for advertising, analytics and fraud prevention according to consent, device settings and Google's configuration. SDK-transmitted data is encrypted in transit.</p>
-<p>Google privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a>.</p>
+<p>SensorForge uses Google AdMob to display an adaptive banner on the root Sensors and Tools screens. Ads are not shown in Record, while recording, inside detail screens or in Info.</p>
+<p>Google User Messaging Platform (UMP) manages advertising consent where required. SensorForge does not request an ad until UMP reports that advertising requests are allowed.</p>
+<p>According to Google, the Mobile Ads SDK may process information such as IP address and IP-derived approximate location, app/ad interactions, diagnostics and performance information, and device or advertising identifiers where available. These data are handled by Google according to consent choices, device settings and Google's configuration.</p>
+<p>Google privacy policy: <a href="https://policies.google.com/privacy">policies.google.com/privacy</a></p>
 
-<h2>Permissions and local files</h2>
-<p>Internet/network-state and advertising-ID access are used for Google advertising and consent. Microphone, camera, precise location, nearby-device, activity and sensor permissions support SensorForge measurement features. Precise GPS data and measurement content are not passed to the ad SDK by SensorForge.</p>
-<p>Recording sessions are stored locally and are shared only when the user explicitly chooses Android's share function. Automatic Android backup of SensorForge app data is disabled.</p>
+<h2>Local storage and retention</h2>
+<p>Recording sessions remain in app-specific storage until the user deletes them or uninstalls the app. Android automatic backup of this data is disabled.</p>
 
-<h2>Retention and deletion</h2>
-<p>Local sessions remain until deleted by the user or until the app is uninstalled. Copies previously shared to other apps must be deleted from those destinations separately. Advertising-related data handled by Google is governed by Google's policies and Android/Google advertising controls.</p>
+<h2>Voluntary sharing</h2>
+<p>Users may explicitly share session files through Android. If a third-party app or cloud service is selected, that copy is then subject to the destination's privacy practices. Orbivia does not automatically receive exports.</p>
 
-<h2>Children</h2>
-<p>SensorForge is a general technical utility and is not specifically directed at children.</p>
+<h2>Deletion</h2>
+<p>Sessions can be deleted from SensorForge. Uninstalling removes private app data. Exported copies must be deleted separately. SensorForge has no remote account to delete.</p>
+
+<h2>Support website</h2>
+<p>This page is hosted through GitHub Pages. GitHub may process technical request information required to provide and secure the website. The SensorForge support site itself contains no analytics or advertising scripts.</p>
 
 <h2>Contact</h2>
-<p>Orbivia — <a href="mailto:pierre.charlier@orbivia.fr">pierre.charlier@orbivia.fr</a></p>
+<p>Privacy questions: Orbivia — <a href="mailto:pierre.charlier@orbivia.fr">pierre.charlier@orbivia.fr</a>.</p>
 </div>
 </body>
 </html>
